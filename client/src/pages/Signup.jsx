@@ -22,8 +22,9 @@ export default function Signup() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
+      console.log(data);
       setLoading(false);
-      if (data.error) {
+      if (data.success === false) {
         setError(true);
         return;
       }
@@ -77,8 +78,8 @@ export default function Signup() {
           </Link>
         </div>
       </form>
-      <div>
-        <p className="text-red-700 mt-5">
+      <div className="flex">
+        <p className="text-red-700 mt-1 ml-20">
           {error && "Username or email address already exist!"}
         </p>
       </div>
