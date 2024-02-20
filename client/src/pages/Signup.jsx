@@ -38,8 +38,8 @@ export default function Signup() {
   return (
     <div className="p-3 max-w-lg mx-auto">
       {" "}
-      <h1 className="text-3xl text-center font-bold justify-content-center my-14">
-        Sign Up
+      <h1 className=" mb-4 text-3xl text-center font-bold justify-content-center my-14">
+        SIGN UP
       </h1>
       <form
         onSubmit={handleSubmit}
